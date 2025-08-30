@@ -1,13 +1,13 @@
+import { PROJECTS } from "@/lib/config";
+import { c, escapeHtml } from "@/lib/utils";
 
 export default function Projects() {
-    return (
-        <div>
-            <p>Some projects:</p>
-            <ul>
-                <li><a href="https://github.com/papadonut9/shawtyfy" target="_blank">Shawtyfy</a></li>
-                <li><a href="https://github.com/papadonut9/bm-ascend" target="_blank">BM Ascend</a></li>
-                <li><a href="https://github.com/papadonut9/memory-allocator" target="_blank">Malloc</a></li>
-            </ul>
-        </div>
-    );
+    const body = PROJECTS.map(
+      (p) => `${p.id}. ${escapeHtml(p.name)} — <span class='${c.dim}'>${escapeHtml(
+        p.brief
+      )}</span>`
+    ).join("\n");
+    const output = body + `\nUse <b>project &lt;id&gt;</b> for details.`;
+
+    return <div className="whitespace-pre-wrap" dangerouslySetInnerHTML={{__html: output}} />
 }
