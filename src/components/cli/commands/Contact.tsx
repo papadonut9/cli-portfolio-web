@@ -1,10 +1,9 @@
+import { ME } from "@/lib/config";
 
-export default function Contact(){
-    return (
-        <div>
-            <p>Email: <a href="mailto:anchxt.m@gmail.com">anchxt.m@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/papadonut9" target="_blank">github.com/papadonut9</a></p>
-            <p>Linkedin: <a href="https://linkedin.com/in/anchit-mhatre" target="_blank">linkedin.com/in/anchit-mhatre</a></p>
-        </div>
-    )
+export default function Contact() {
+    const output = `Email: <a href='mailto:${ME.email}'>${ME.email}</a>
+GitHub: <a href='${ME.github}' target='_blank' rel='noreferrer'>${ME.github}</a>
+LinkedIn: <a href='${ME.linkedin}' target='_blank' rel='noreferrer'>${ME.linkedin}</a>`;
+
+    return <div className="whitespace-pre-wrap" dangerouslySetInnerHTML={{__html: output}} />
 }
