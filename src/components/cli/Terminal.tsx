@@ -51,7 +51,7 @@ export default function Terminal() {
   useEffect(() => {
     const banner = [
       `<span class='${c.cyan}'>AnchxtOS v1.0</span> – ${ME.name} (@${ME.handle})`,
-      `${nowGreeting()} Type <b>help</b> to begin. Konami is… enabled.`,
+      `${nowGreeting()} <br>Type <b>help</b> to begin. Konami is… enabled.`,
     ];
     setLines(banner.map((s) => ({ html: s })));
   }, []);
@@ -172,7 +172,7 @@ export default function Terminal() {
         {/* Terminal viewport */}
         <div
           ref={viewportRef}
-          className="min-h-[60vh] rounded-2xl border border-neutral-700/40 bg-neutral-900/50 p-4 shadow-inner dark:bg-neutral-900/80"
+          className="min-h-[60vh] rounded-2xl border p-4 shadow-inner bg-gray-100/80 border-gray-300/50 text-gray-900 dark:bg-neutral-900/80 dark:border-neutral-700/40 dark:text-gray-100"
         >
           {lines.map((line, i) => (
             <pre key={i} className="whitespace-pre-wrap leading-relaxed">
