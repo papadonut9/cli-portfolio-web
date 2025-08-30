@@ -24,6 +24,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <head>
+            <title>Anchit M. (@anchxt) - Software Engineer | Interactive CLI Portfolio</title>
+            <meta name="description" content="Software Engineer specializing in backend systems, distributed architecture, and infrastructure. Explore my interactive terminal portfolio with projects, resume, and contact info." />
+            <meta name="keywords" content="software engineer, backend developer, distributed systems, kafka, kubernetes, portfolio, cli terminal" />
+            <meta name="author" content="Anchxt" />
+
+            <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="Anchit's Portfolio" />
+            <meta property="og:title" content="Anchit M. (@anchxt) - Software Engineer | Interactive CLI Portfolio" />
+            <meta property="og:description" content="Software Engineer specializing in backend systems, distributed architecture, and infrastructure. Explore my interactive terminal portfolio with projects, resume, and contact info." />
+            <meta property="og:url" content="https://anchxt.dev" />
+            <meta property="og:image" content="https://anchxt.dev/og-image.png" />
+            <meta property="og:image:alt" content="Ace's CLI Portfolio - Interactive terminal interface showing command prompt" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:locale" content="en_US" />
+
+            <meta name="robots" content="index, follow" />
+            <meta name="theme-color" content="#0a0a0a" />
+            <meta name="color-scheme" content="dark light" />
+
+            <link rel="canonical" href="https://anchxt.dev" />
+
+
+        </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
