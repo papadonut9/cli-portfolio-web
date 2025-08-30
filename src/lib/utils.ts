@@ -17,3 +17,14 @@ export const openUrl = (url: string) => {
       return `${cTag("Err", "text-rose-300")} invalid URL`;
     }
 };
+
+// Simple ANSI-like color helpers (via CSS classes)
+export const c = {
+    dim: "opacity-70",
+    green: "text-green-400",
+    cyan: "text-cyan-300",
+    magenta: "text-fuchsia-300",
+    yellow: "text-yellow-300",
+    red: "text-rose-300",
+    gray: "text-neutral-400",
+};
