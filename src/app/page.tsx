@@ -7,3 +7,8 @@ export default function Home(){
       </main>
   );
 }
+export const metadata = {
+    title: "Anchit M. (@anchxt) | Interactive CLI Portfolio",
+    description: "Software Engineer specializing in backend systems, distributed architecture, and infrastructure. Explore my interactive terminal portfolio with projects, resume, and contact info.",
+    keywords: "software engineer, backend developer, distributed systems, kafka, kubernetes, portfolio, cli terminal",
+}
