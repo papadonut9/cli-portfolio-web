@@ -41,3 +41,12 @@ export const KONAMI = [
     "b",
     "a",
 ];
+
+export const nowGreeting = () => {
+    const h = new Date().getHours();
+    if (h < 5) return "You're up late. Respect.";
+    if (h < 12) return "Good morning.";
+    if (h < 17) return "Good afternoon.";
+    if (h < 22) return "Good evening.";
+    return "Burning the midnight oil?";
+};
