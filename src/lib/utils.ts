@@ -28,3 +28,16 @@ export const c = {
     red: "text-rose-300",
     gray: "text-neutral-400",
 };
+
+export const KONAMI = [
+    "ArrowUp",
+    "ArrowUp",
+    "ArrowDown",
+    "ArrowDown",
+    "ArrowLeft",
+    "ArrowRight",
+    "ArrowLeft",
+    "ArrowRight",
+    "b",
+    "a",
+];
