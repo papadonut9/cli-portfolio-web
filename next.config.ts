@@ -6,8 +6,8 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig: NextConfig = {
     output: 'export',
     images: { unoptimized: true },
-    basePath: isProd ? '/portfolio-cli' : '',
-    assetPrefix: isProd ? '/portfolio-cli/' : '',
+    // basePath: isProd ? '' : '',
+    // assetPrefix: isProd ? '' : '',
 };
 
 export default nextConfig;
